@@ -31,7 +31,7 @@ numerical ground truth closely.
 ## Files
 
 ```
-project5_nonlinear/
+Physics_Informed_Neural_Networks/
 ├── main.py
 ├── src/
 │   ├── config.py              # physics constants incl. K1, K3 foundation terms
@@ -48,7 +48,10 @@ project5_nonlinear/
     ├── uncertainty_histogram.png
     ├── timing_scaling.png        # NEW: wall-clock time vs. sample count, log-log
     ├── reliability_results.json
-    └── validation_errors.json
+    ├── validation_errors.json
+    ├── summary.json
+    ├── training_history.json
+    └── pinn_model.pt             # Model weights
 ```
 
 ## Run it
