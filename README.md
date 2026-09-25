@@ -58,7 +58,7 @@ Physics_Informed_Neural_Networks/
 
 ```bash
 python3 -m venv .venv && source .venv/bin/activate
-pip install torch numpy matplotlib scipy
+pip install -r requirements.txt
 python main.py
 ```
 
