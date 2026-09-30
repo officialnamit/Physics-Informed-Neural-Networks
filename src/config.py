@@ -33,9 +33,9 @@ K3 = 2.0e9                # cubic (hardening) foundation modulus [N/m^4]
 # Random / uncertain material & load properties (same distributions as the
 # linear cantilever study, so results are directly comparable)
 E_NOM = 200.0e9
-E_COV = 0.10
+E_COV = 0.18
 Q_NOM = 1000.0
-Q_COV = 0.15
+Q_COV = 0.35
 
 W_ALLOW = L / 250.0       # allowable tip deflection [m]
 
@@ -44,15 +44,15 @@ W_SCALE = Q_NOM * L**4 / (24.0 * E_NOM * I)   # output normalization for the net
 # ---------------------------------------------------------------------------
 # Training hyperparameters (same architecture family as the linear study)
 # ---------------------------------------------------------------------------
-N_COLLOCATION = 1200
-N_BOUNDARY = 150
+N_COLLOCATION = 1500
+N_BOUNDARY = 200
 HIDDEN_LAYERS = 4
-HIDDEN_WIDTH = 40
+HIDDEN_WIDTH = 48
 LR = 2e-3
-EPOCHS = 3500
+EPOCHS = 4500
 BC_WEIGHT = 10.0
-PRINT_EVERY = 350
-LBFGS_ITERS = 400
+PRINT_EVERY = 100
+LBFGS_ITERS = 500
 SEED = 42
 
 # ---------------------------------------------------------------------------
